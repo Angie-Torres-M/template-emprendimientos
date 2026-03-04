@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="meta.title">Marca</title>
+
+  <!-- OpenGraph básico -->
+  <meta property="og:title" content="Marca" />
+  <meta property="og:description" content="Descripción breve" />
+  <meta property="og:image" content="./assets/img/og.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="./assets/img/logo.png" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="topbar">
+    <!-- Mobile: hamburguesa izquierda -->
+    <button id="btnMenu" class="iconbtn topbar__menu" type="button"
+      aria-label="Abrir menú" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+    <!-- Centro (en móvil solo logo) -->
+    <a class="brand" href="#top" aria-label="Inicio">
+      <img id="brandLogo" src="./assets/img/logo.png" alt="Logo" class="brand__logo" />
+      <span id="brandName" class="brand__name">Marca</span>
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="topbar__nav" aria-label="Secciones">
+      <a class="topbar__link" href="#social" data-i18n="nav.social">Redes</a>
+      <a class="topbar__link" href="#offer" data-i18n="nav.offer">Ofrecemos</a>
+      <a class="topbar__link" href="#featured" data-i18n="nav.featured">Destacados</a>
+      <a class="topbar__link" href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a class="topbar__link" href="#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="topbar__actions">
+      <!-- Tema -->
+      <button id="btnTheme" class="iconbtn" type="button" aria-label="Cambiar tema" title="Tema">
+        <span id="themeIcon" aria-hidden="true">☀️</span>
+      </button>
+
+      <!-- Idioma: muestra el idioma al que cambia (ES -> EN, EN -> ES) -->
+      <button id="btnLang" class="iconbtn" type="button" aria-label="Cambiar idioma" title="Idioma">
+        <span id="langLabel">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer móvil -->
+  <div id="drawerOverlay" class="drawer-overlay hidden" aria-hidden="true"></div>
+
+  <aside id="mobileDrawer" class="drawer hidden" aria-label="Menú móvil">
+    <div class="drawer__header">
+      <span class="drawer__title" data-i18n="nav.menu">Menú</span>
+      <button id="btnCloseMenu" class="iconbtn" type="button" aria-label="Cerrar menú">✕</button>
+    </div>
+
+    <nav class="drawer__nav">
+      <a class="drawer__link" href="#social" data-i18n="nav.social">Redes</a>
+      <a class="drawer__link" href="#offer" data-i18n="nav.offer">Ofrecemos</a>
+      <a class="drawer__link" href="#featured" data-i18n="nav.featured">Destacados</a>
+      <a class="drawer__link" href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a class="drawer__link" href="#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+  </aside>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1 id="heroTitle" class="hero__title">Marca</h1>
+          <p id="heroDesc" class="hero__desc" data-i18n="brand.shortDesc">
+            Descripción breve del emprendimiento.
+          </p>
+
+          <!-- anchor para nav Redes -->
+          <div id="social" class="anchor"></div>
+
+          <!-- Redes: 4 en desktop, 1 por renglón en móvil -->
+          <div id="socialLinks" class="social"></div>
+        </div>
+      </div>
+      <img id="heroLogo" src="./assets/img/logo.png" alt="" hidden />
+    </section>
+
+    <!-- QUÉ OFRECEN (4) -->
+    <section id="offer" class="section">
+      <div class="container">
+        <h2 data-i18n="sections.offer.title">¿Qué ofrecemos?</h2>
+        <div id="offerCards" class="grid"></div>
+      </div>
+    </section>
+
+    <!-- DESTACADOS (2) -->
+    <section id="featured" class="section">
+      <div class="container">
+        <h2 data-i18n="sections.featured.title">Destacados</h2>
+        <div id="featuredCards" class="grid grid--2"></div>
+      </div>
+    </section>
+
+    <!-- CATALOGO (OPCIONAL) -->
+    <section id="catalog" class="section hidden">
+      <div class="container">
+        <h2 data-i18n="sections.catalog.title">Catálogo</h2>
+        <div class="embed">
+          <iframe id="canvaEmbed" title="Catálogo" loading="lazy" referrerpolicy="no-referrer" allowfullscreen></iframe>
+        </div>
+        <p class="muted" data-i18n="sections.catalog.note">Si no carga, revisa el link compartido de Canva.</p>
+      </div>
+    </section>
+
+    <!-- FAQ (6) -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 data-i18n="sections.faq.title">FAQ</h2>
+        <div id="faqList" class="faq"></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO (centrado) -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 data-i18n="sections.contact.title">Contacto</h2>
+
+        <div class="contact-wrap">
+          <p class="muted contact-lead" data-i18n="contact.lead">
+            Si tienes dudas o comentarios, mándanos tu mensaje.
+          </p>
+
+          <form id="contactForm" class="form form--center" novalidate>
+            <label class="label">
+              <span data-i18n="form.name">Nombre</span>
+              <input id="nameInput" name="name" type="text" autocomplete="name" />
+              <small class="error" id="nameError"></small>
+            </label>
+
+            <label class="label">
+              <span data-i18n="form.email">Email</span>
+              <input id="emailInput" name="email" type="email" autocomplete="email" />
+              <small class="error" id="emailError"></small>
+            </label>
+
+            <label class="label">
+              <span data-i18n="form.message">Mensaje</span>
+              <textarea id="msgInput" name="message" rows="5"></textarea>
+              <small class="error" id="msgError"></small>
+            </label>
+
+            <button class="btn btn--primary" type="submit">
+              <span data-i18n="form.send">Enviar</span>
+            </button>
+
+            <p id="formStatus" class="muted" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="muted contact-fast">
+            <span data-i18n="contact.fast">Respuestas más rápidas:</span>
+            <a id="fastLink" class="fast-link" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="./assets/img/logo.png" alt="Logo" class="footer__logo" />
+        <p id="footerBrandName" class="footer__name">Marca</p>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer.points">Puntos de venta</h4>
+        <p id="pointsText" class="muted" data-i18n="footer.pointsBody">Texto breve.</p>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer.shipping">Entregas y envíos</h4>
+        <p id="shippingText" class="muted" data-i18n="footer.shippingBody">Texto breve.</p>
+      </div>
+    </div>
+
+    <div class="container footer__legal">
+      <p id="legalText">© 2026 Marca. Todos los derechos reservados. Ciudad.</p>
+    </div>
+  </footer>
+
+  <script src="./js/config.js"></script>
+  <script src="./js/theme.js"></script>
+  <script src="./js/i18n.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "meta.title": "Marca | Emprendimiento",
+  "ui.darkMode": "Modo oscuro",
+
+  "brand.shortDesc": "Descripción breve del emprendimiento.",
+
+  "sections.story.title": "Historia",
+  "sections.story.body": "Texto breve de historia (1–2 párrafos).",
+
+  "sections.offer.title": "¿Qué ofrecemos?",
+  "sections.featured.title": "Destacados",
+
+  "sections.catalog.title": "Catálogo",
+  "sections.catalog.note": "Si no carga, revisa el link compartido de Canva.",
+
+  "sections.faq.title": "FAQ",
+
+  "sections.contact.title": "Contacto",
+  "sections.contact.direct": "Contacto directo",
+
+  "form.name": "Nombre",
+  "form.email": "Email",
+  "form.message": "Mensaje",
+  "form.send": "Enviar",
+
+  "footer.points": "Puntos de venta",
+  "footer.pointsBody": "Texto breve sobre dónde encontrar la marca.",
+  "footer.shipping": "Entregas y envíos",
+  "footer.shippingBody": "Texto breve sobre entregas y envíos.",
+
+  "offer.1.title": "Servicio 1",
+  "offer.1.body": "Descripción breve.",
+  "offer.2.title": "Servicio 2",
+  "offer.2.body": "Descripción breve.",
+  "offer.3.title": "Servicio 3",
+  "offer.3.body": "Descripción breve.",
+  "offer.4.title": "Servicio 4",
+  "offer.4.body": "Descripción breve.",
+
+  "faq.1.q": "Pregunta 1",
+  "faq.1.a": "Respuesta breve.",
+  "faq.2.q": "Pregunta 2",
+  "faq.2.a": "Respuesta breve.",
+  "faq.3.q": "Pregunta 3",
+  "faq.3.a": "Respuesta breve.",
+  "faq.4.q": "Pregunta 4",
+  "faq.4.a": "Respuesta breve.",
+  "faq.5.q": "Pregunta 5",
+  "faq.5.a": "Respuesta breve.",
+  "faq.6.q": "Pregunta 6",
+  "faq.6.a": "Respuesta breve.",
+
+  "nav.menu": "Menú",
+  "nav.social": "Redes",
+  "nav.offer": "Ofrecemos",
+  "nav.featured": "Destacados",
+  "nav.faq": "FAQ",
+  "nav.contact": "Contacto",
+
+  "form.errors.name": "Escribe tu nombre (mínimo 2 caracteres).",
+  "form.errors.email": "Escribe un email válido.",
+  "form.errors.message": "Cuéntanos un poco más (mínimo 10 caracteres).",
+  "form.success": "¡Listo! Tu mensaje está listo. (Conecta EmailJS o tu backend cuando quieras.)",
+
+  "featured.1.title": "Producto destacado 1",
+  "featured.1.body": "Descripción breve.",
+  "featured.2.title": "Producto destacado 2",
+  "featured.2.body": "Descripción breve.",
+
+  "contact.lead": "Si tienes dudas o comentarios, mándanos tu mensaje.",
+  "contact.fast": "Respuestas más rápidas:"
+}

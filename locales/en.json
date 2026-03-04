@@ -1,0 +1,72 @@
+{
+  "meta.title": "Brand | Small Business",
+  "ui.darkMode": "Dark mode",
+
+  "brand.shortDesc": "A brief description of the business.",
+
+  "sections.story.title": "Our Story",
+  "sections.story.body": "A short story text (1–2 paragraphs).",
+
+  "sections.offer.title": "What we offer",
+  "sections.featured.title": "Featured",
+
+  "sections.catalog.title": "Catalog",
+  "sections.catalog.note": "If it doesn't load, check the shared Canva link.",
+
+  "sections.faq.title": "FAQ",
+
+  "sections.contact.title": "Contact",
+  "sections.contact.direct": "Direct contact",
+
+  "form.name": "Name",
+  "form.email": "Email",
+  "form.message": "Message",
+  "form.send": "Send",
+
+  "footer.points": "Where to find us",
+  "footer.pointsBody": "A short text about where to find the brand.",
+  "footer.shipping": "Delivery & shipping",
+  "footer.shippingBody": "A short text about delivery and shipping.",
+
+  "offer.1.title": "Service 1",
+  "offer.1.body": "Short description.",
+  "offer.2.title": "Service 2",
+  "offer.2.body": "Short description.",
+  "offer.3.title": "Service 3",
+  "offer.3.body": "Short description.",
+  "offer.4.title": "Service 4",
+  "offer.4.body": "Short description.",
+
+  "faq.1.q": "Question 1",
+  "faq.1.a": "Short answer.",
+  "faq.2.q": "Question 2",
+  "faq.2.a": "Short answer.",
+  "faq.3.q": "Question 3",
+  "faq.3.a": "Short answer.",
+  "faq.4.q": "Question 4",
+  "faq.4.a": "Short answer.",
+  "faq.5.q": "Question 5",
+  "faq.5.a": "Short answer.",
+  "faq.6.q": "Question 6",
+  "faq.6.a": "Short answer.",
+
+  "nav.menu": "Menu",
+  "nav.social": "Social",
+  "nav.offer": "Offer",
+  "nav.featured": "Featured",
+  "nav.faq": "FAQ",
+  "nav.contact": "Contact",
+
+  "form.errors.name": "Please enter your name (minimum 2 characters).",
+  "form.errors.email": "Please enter a valid email address.",
+  "form.errors.message": "Tell us a bit more (minimum 10 characters).",
+  "form.success": "All set! Your message is ready. (Connect EmailJS or your backend whenever you want.)",
+
+  "featured.1.title": "Featured product 1",
+  "featured.1.body": "Short description.",
+  "featured.2.title": "Featured product 2",
+  "featured.2.body": "Short description.",
+
+  "contact.lead": "If you have questions or comments, send us a message.",
+  "contact.fast": "Fastest replies:"
+}
